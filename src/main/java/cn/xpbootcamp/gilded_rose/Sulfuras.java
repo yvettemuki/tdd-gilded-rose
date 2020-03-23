@@ -7,7 +7,11 @@ public class Sulfuras extends Commodity {
     }
 
     @Override
-    public void setSellIn(int sellIn) {
+    public void setSellIn(long sellIn) {
         this.SellIn =  -1;
+    }
+
+    public int getValue(long currentTime) {
+        return this.Quality;
     }
 }
